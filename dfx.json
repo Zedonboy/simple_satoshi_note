@@ -1,0 +1,41 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    },
+    "satoshi_note_backend": {
+      "candid": "src/satoshi_note_backend/satoshi_note_backend.did",
+      "declarations": {
+        "node_compatibility": true
+      },
+      "package": "satoshi_note_backend",
+      "type": "rust"
+    },
+    "satoshi_note_frontend": {
+      "dependencies": [
+        "satoshi_note_backend"
+      ],
+      "source": [
+        "src/satoshi_note_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "satoshi_note_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
