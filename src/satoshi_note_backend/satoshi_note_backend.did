@@ -1,3 +1,15 @@
-service : {
-    "greet": (text) -> (text) query;
+type EncryptedNote = record { id : nat; encrypted_text : text };
+type Result = variant { Ok; Err : text };
+type SellOrder = record { note_id : nat; author : text; price : nat };
+service : () -> {
+  add_note : (text) -> ();
+  add_note_to_marketsquare : (SellOrder) -> ();
+  buy_note : (nat) -> (Result);
+  delete_note : (nat) -> ();
+  export_candid : () -> (text) query;
+  get_deposit_address : () -> (text) query;
+  get_notes : () -> (vec EncryptedNote);
+  get_notes_on_sale : () -> (vec nat) query;
+  update_note : (EncryptedNote) -> ();
+  whoami : () -> (text);
 }
