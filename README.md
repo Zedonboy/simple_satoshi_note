@@ -1,10 +1,31 @@
-# satoshi_note
+# Satoshi Notes
 
-Welcome to your new satoshi_note project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+## Introduction
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+Satoshi Notes is a revolutionary note-taking application that prioritizes privacy and integrates Bitcoin for content monetization. Designed to run on your personal computer, it ensures your notes remain private and secure, free from Big Tech eavesdropping. With Satoshi Notes, you can effortlessly create, manage, and publish your notes in HTML without needing to learn Markdown. 
 
-To learn more before you start working with satoshi_note, see the following documentation available online:
+## Features
+
+- **Privacy-Centric:** Runs locally on your Mac or PC, keeping your notes private and secure.
+- **HTML Note Taking:** Easy-to-use interface, similar to popular note apps, without the need for Markdown.
+- **Bitcoin Integration:** Monetize valuable content directly with Bitcoin, supported by ckBTC for fast and affordable transactions.
+- **Blockchain Backup:** Optional saving of text online on the secure and independent Internet Computer blockchain.
+
+## Getting Started
+
+[Instructions on installation, setup, and basic usage]
+
+## How to Contribute
+
+We welcome contributions! If you're interested in helping with the development of Satoshi Notes, please check out our [contribution guidelines](CONTRIBUTION.md).
+
+## Team
+
+- **Joseph Hurtado** - Founder, CIO, Product Manager, Programmer
+- **Valerii Ermolin** - Sr. Full Stack Developer
+- **Declan Nnadozie** - Lead Rust Developer
+
+##
 
 - [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
 - [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
